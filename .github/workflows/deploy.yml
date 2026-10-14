@@ -21,6 +21,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -53,6 +55,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Deploy to Surge
-        if: ${{ secrets.SURGE_TOKEN != '' }}
+        if: env.SURGE_TOKEN != ''
         continue-on-error: true
         run: npx surge dist/client ptanstack.surge.sh --token ${{ secrets.SURGE_TOKEN }}
