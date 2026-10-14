@@ -8,7 +8,12 @@
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF.svg)](https://vitejs.dev/)
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-7.3.1-528DD7.svg)](https://fontawesome.com/)
 
+## 📖 关于
+
 **WebNav Hub** 是一个现代化、数据驱动的个人网站导航中心。本项目在**100% 严格保留原版经典视觉界面与交互设计（UI 像素级完全不变）**的前提下，底层代码全面升级为最新现代化技术栈架构：**TanStack Start**、**TanStack Router**、**TanStack Query v5**、**React 19** 与 **TypeScript**。
+
+* 🌐 **主站点**: [https://ptanstack.ndjp.net](https://ptanstack.ndjp.net)
+* ⚡ **镜像站 (Surge)**: [https://ptanstack.surge.sh](https://ptanstack.surge.sh/) 同步更新
 
 ---
 
