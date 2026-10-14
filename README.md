@@ -6,6 +6,7 @@
 [![React 19](https://img.shields.io/badge/React-19.x-61dafb.svg)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Latest-blue.svg)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF.svg)](https://vitejs.dev/)
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-7.3.1-528DD7.svg)](https://fontawesome.com/)
 
 **WebNav Hub** 是一个现代化、数据驱动的个人网站导航中心。本项目在**100% 严格保留原版经典视觉界面与交互设计（UI 像素级完全不变）**的前提下，底层代码全面升级为最新现代化技术栈架构：**TanStack Start**、**TanStack Router**、**TanStack Query v5**、**React 19** 与 **TypeScript**。
 
@@ -75,6 +76,33 @@ pTanStack/
   }
 ]
 ```
+
+### 🎨 图标库 (Font Awesome) 引用与配置说明
+
+本项目全局引入了最新版的 **Font Awesome 7 (Free)** 图标库，分类与各个链接卡片的图标均采用标准 Font Awesome 类名。
+
+* **全局引入方式**：
+  在根布局 [`src/routes/__root.tsx`](./src/routes/__root.tsx) 的 Head 中通过官方 CDN 引入最新版 CSS 样式：
+  ```html
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css" />
+  ```
+* **在线查阅图标**：
+  可前往 [Font Awesome 官方图标库搜索](https://fontawesome.com/search?o=r&m=free) 查找数千款免费图标。
+* **常用图标样式前缀**：
+  | 样式类型 | 前缀标识 | 示例 | 适用场景 |
+  | :--- | :--- | :--- | :--- |
+  | **Solid**（实心） | `fa-solid` | `fa-solid fa-robot`, `fa-solid fa-cloud`, `fa-solid fa-envelope` | 通用工具、功能、实体对象 |
+  | **Brands**（品牌） | `fa-brands` | `fa-brands fa-google`, `fa-brands fa-github`, `fa-brands fa-microsoft` | 知名企业、服务商、开源软件 Logo |
+  | **Regular**（常规线性） | `fa-regular` | `fa-regular fa-folder-open`, `fa-regular fa-bookmark` | 线性空心风格图标 |
+* **在 `data.json` 中配置**：
+  直接将完整的图标类名填入分类或网址对象的 `"icon"` 属性即可实时生效：
+  ```json
+  {
+    "name": "GitHub",
+    "url": "https://github.com/",
+    "icon": "fa-brands fa-github"
+  }
+  ```
 
 ---
 
