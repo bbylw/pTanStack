@@ -37,6 +37,9 @@ jobs:
       - name: Build Project (SSG Prerender)
         run: npm run build
 
+      - name: Prepare SPA Fallback (200.html)
+        run: cp dist/client/index.html dist/client/200.html
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
@@ -50,8 +53,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Deploy to Surge
-        if: env.SURGE_TOKEN != ''
+        if: ${{ secrets.SURGE_TOKEN != '' }}
         continue-on-error: true
-        env:
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: npx surge dist/client ptanstack.surge.sh --token ${{ secrets.SURGE_TOKEN }}
