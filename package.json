@@ -4,8 +4,7 @@
   "type": "module",
   "packageManager": "bun@1.4.4",
   "imports": {
-    "#/*": "./src/*",
-    "@/*": "./src/*"
+    "#/*": "./src/*"
   },
   "scripts": {
     "dev": "vite dev",
