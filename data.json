@@ -262,6 +262,16 @@
         "name": "bolt.new",
         "url": "https://bolt.new/",
         "icon": "fa-solid fa-bolt"
+      },
+      {
+        "name": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/",
+        "icon": "fa-solid fa-chart-line"
+      },
+      {
+        "name": "perchai.app",
+        "url": "https://www.perchai.app/",
+        "icon": "fa-solid fa-crow"
       }
     ]
   },
@@ -275,9 +285,9 @@
         "icon": "fa-brands fa-facebook"
       },
       {
-        "name": "Twitter",
-        "url": "https://x.com/",
-        "icon": "fa-brands fa-twitter"
+        "name": "F-Droid",
+        "url": "https://f-droid.org/",
+        "icon": "fa-brands fa-android"
       },
       {
         "name": "推特视频下载",
@@ -320,9 +330,9 @@
         "icon": "fa-solid fa-share-from-square"
       },
       {
-        "name": "爆米花视频",
-        "url": "https://goingbus.com/",
-        "icon": "fa-brands fa-n"
+        "name": "apkmirror",
+        "url": "https://www.apkmirror.com/",
+        "icon": "fa-brands fa-android"
       },
       {
         "name": "Reddit",
@@ -811,9 +821,19 @@
         "icon": "fa-solid fa-globe"
       },
       {
+        "name": "nssnap免费域名",
+        "url": "https://nssnap.com/",
+        "icon": "fa-solid fa-globe"
+      },
+      {
         "name": "PinMe",
         "url": "https://pinme.eth.limo/",
         "icon": "fa-solid fa-thumbtack"
+      },
+      {
+        "name": "Openverse",
+        "url": "https://openverse.org/",
+        "icon": "fa-brands fa-creative-commons"
       }
     ]
   },
